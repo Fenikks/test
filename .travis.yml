@@ -8,8 +8,8 @@ branches:
   - main
 env:
   global:
-  - IMAGE_NAME=openolat
-  - VERSION=latest
+  - IMAGE_NAME=testimage
+  - VERSION=test
 before_script:
 - echo "$DOCKER_PASSWORD" |  docker login ghcr.io -u "$DOCKER_USERNAME" --password-stdin
 script:
